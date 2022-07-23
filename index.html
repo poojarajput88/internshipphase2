@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+    <style> 
+        #div1{ 
+            width: 400px; 
+            height: 400px; 
+            background-color: aqua; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <div id="div1"> 
+ 
+    </div> 
+ 
+    <div class="changer"> 
+        <input type="color" name="color" id="divCol" /> 
+ 
+    </div> 
+ 
+    <button onclick="changeColor()">show me color</button> 
+ 
+    <script> 
+ 
+        function changeColor() { 
+            document.getElementById('div1').style.backgroundColor = document.getElementById('divCol').value; 
+        } 
+    </script> 
+</body> 
+</html>
